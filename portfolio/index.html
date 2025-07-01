@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Frank+Ruhl+Libre:wght@300..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="Shortcut icon" href="componentes/portfolioicono.png" type="image/png" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobremi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="../index.html">Linktree</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="https://wa.link/kafdaj" target="_blank" class="boton-whatsapp">
+  <img src="componentes/whatsappicono.png" alt="WhatsApp Icono">
+    </a>
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="texto">
+                <h1>¡Hola! Soy Agustina</h1>
+                <h2>Estudiante de Marketing</h2>
+                <p>Me gusta siempre aprender cosas nuevas, y hoy estoy explorando el mundo de la programación.</p>
+            </div>
+            <div class="imagen">
+                <img src="componentes/fotomia2.jpeg" alt="Foto Mía" />
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="sobre-dos-columnas fondo">
+        <div class="container dos-columnas">
+            <div class="bloque">
+                <h2>Quién soy</h2>
+                <p>Me llamo Agustina, soy estudiante de Marketing en UADE y estoy trabajando como Asistente de Marketing en Northbaires, una desarrolladora. <br> Tengo 20 años y vivo en Buenos Aires. <br>Soy una persona extrovertida, alegre y optimista. Además, soy de Virgo y eso me caracteriza un montón, porque si hay algo que quiero, no paro hasta conseguirlo. Con propósito y perseverancia, todo se puede lograr.</p>
+            </div>
+            <div class="bloque">
+                <h2>Qué me gusta</h2>
+                <p>Me interesa el marketing, obvio, pero además me encanta aprender cosas nuevas todo el tiempo, no importa de qué se trate. Es por eso que estoy cursando Diseño y Desarrollo Web, para seguir incorporando nuevas herramientas en mi vida. <br> Como me encanta aprender un poco de todo... a lo largo de mi vida hice muchas actividades. Empecé con danza clásica a los 4 años, y pase por danza contemporánea, danza jazz, baile urbano, circo, gimnasia artística, canto, piano, y finalmente, acrobacia, en lo que me desempeño hoy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="fondo-proyectos">
+        <div class="container-proyectos">
+            <h2 class="titulo-proyecto">Mis Proyectos</h2>
+            <div class="proyectos-grid">
+                <div class="proyecto1">
+                    <h3>Slider</h3>
+                    <p>En este slider podrán ver algunas fotos de cuando recibí la mención de honor en UADE por mérito académico.</p>
+                    <a href="proyectos/proyecto1.html" target="_blank">Ver proyecto</a>
+                </div>
+                <div class="proyecto2">
+                    <h3>Galería de fotos</h3>
+                    <p>En esta galería podrán ver algunas fotos tomadas por mí en la inaguración del edificio donde trabajo.</p>
+                    <a href="proyectos/proyecto2.html" target="_blank">Ver proyecto</a>
+                </div>
+                <div class="proyecto3">
+                    <h3>Modal</h3>
+                    <p>Aca podrán ver un modal que se abre al hacer click en el botón.</p>
+                    <a href="proyectos/proyecto3.html" target="_blank">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+   <section id="habilidades" class="fondo-habilidades">
+        <h2 class="titulo-habilidades">Habilidades</h2>
+        <div class="habilidades-grid">
+            <div class="habilidad-tag">
+                <p>HTML / CSS / JavaScript</p> 
+            </div>
+            <div class="habilidad-tag">
+                <p>Responsive Design</p>
+            </div>
+            <div class="habilidad-tag">
+                <p>Figma y diseño UI</p>
+            </div>
+            <div class="habilidad-tag">
+                <p>Gestión de redes sociales</p>
+            </div>
+            <div class="habilidad-tag">
+                <p>Análisis de leads</p>
+            </div>
+            <div class="habilidad-tag">
+                <p>Email marketing</p>
+            </div>
+            <div class="habilidad-tag">
+                <p>Atención al cliente</p>
+            </div>
+            <div class="habilidad-tag">
+                <p>Creación de contenido</p>
+            </div>
+            <div class="habilidad-tag">
+                <p>Excel avanzado</p>
+            </div>
+        </div>
+        <div class="CV-download">
+            <a href="componentes/cv  Agustina Contreras.pdf" download target="_blank">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="fondo-contacto">
+        <div class="container-contacto">
+            <h2>Contacto</h2>
+                <form id="contacto-form"  name="contacto-form">
+                    <label for="nombre">Nombre:</label>
+                        <input placeholder="Escriba aquí su nombre..."type="text" id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+                        <input placeholder="Escriba aquí su mail..."type="email" id="email" name="email" required>
+                    <label for="mensaje">Mensaje:</label>
+                        <textarea cols="100" placeholder="Escriba aquí su consulta..." id="mensaje" name="mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+        </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Agustina Contreras</p>
+    <a href="https://www.linkedin.com/in/agustina-sol-contreras-garat-598841253/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a> |
+    <a href="https://www.instagram.com/aguscontrerass_?igsh=c282djBycHA5NTU2&utm_source=qr" target="_blank">Instagram</a> |
+    <a href="https://www.tiktok.com/@aguscontreras.ok?_t=ZM-8wg662Ms5Tk&_r=1" target="_blank">Tik Tok</a>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
