@@ -39,6 +39,13 @@ body {
   height: 40px;
 }
 
+@media (max-width: 500px) {
+  .boton-whatsapp img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /* NAV */
 header {
   background-color: black;
@@ -66,6 +73,23 @@ nav a {
 
 nav a:hover {
   color: #d4ff57;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.5rem 0;
+    position: relative;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 1rem;
+  }
+  nav ul li {
+    margin: 0.5rem 0;
+  }
 }
 
 /* SECCIONES */
@@ -202,6 +226,7 @@ footer {
   .hero {
     background: linear-gradient(to bottom, #5e2ced 70%, #d4ff57 30%);
     padding: 40px 0;
+    flex-direction: column;
   }
 
   .hero-content {
@@ -209,16 +234,29 @@ footer {
     text-align: center;
   }
 
-  .hero .texto {
+  .hero .texto h1 {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 1;
+    font-size: 3rem;
+  }
+  .hero .texto h2 {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 1;
+    font-size: 2rem;
+  }
+  .hero .texto p {
     animation: fadeInUp 1s ease-out forwards;
     opacity: 0;
+    font-size: 1.2rem;
   }
-
+  
   .hero .imagen {
     margin-top: 30px;
     animation: fadeInUp 1s ease-out 0.5s forwards;
     opacity: 0;
+    max-width: 200px;
   }
+
 
   @keyframes fadeInUp {
     from {
@@ -289,8 +327,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
-  margin-left: 20%;
-  margin-right: 20%;
+  padding: 0 1rem;
 }
 
 .habilidad-tag {
@@ -403,23 +440,7 @@ footer {
   margin-top: 5%;
 }
 
-.proyecto1{
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px black;
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.2s ease;
-}
-.proyecto2 {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px black;
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.2s ease;
-}
-.proyecto3 {
+.proyecto{
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 15px black;
@@ -448,27 +469,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-.proyecto1 a {
-  text-decoration: none;
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
-  color: #5e2ced;
-  border-radius: 8px;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.proyecto2 a {
-  text-decoration: none;
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
-  color: #5e2ced;
-  border-radius: 8px;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.proyecto3 a {
+.proyecto a {
   text-decoration: none;
   margin: 1rem 0;
   padding: 0.5rem 1rem;
